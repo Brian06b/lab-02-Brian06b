@@ -1,6 +1,6 @@
 # Brian Barrios Montiel
 # UWYO COSC 1010
-# Submission Date
+# September 17th, 2024
 # Lab 02 
 # Lab Section: 
 # Sources, people worked with, help given to: 
@@ -13,7 +13,8 @@ your_variable_here = "when you see this, replace it with your code"
 ## Section ONE
 
 # Complete the following print statement to print out "Hello, COSC1010"
-print("Hello, COSC1010")
+Message = "Hello, COSC1010"
+print(Message)
 
 # Assign the string above to a variable named hello_message and print that variable
 hello_message = ""
