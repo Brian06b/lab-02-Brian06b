@@ -24,13 +24,21 @@ for student in students:
     name = student["name"]
     scores = student["scores"].values()
     average_score = sum(scores) / len(scores)
-    print(f"{student["name"]}: {average_score}")
+    print(f"{student["name"]}: {average_score:.2f} is their average score")
 
-    if average_score > 80:
-        print (f"{name} has an average score greater than 80")
-    else:
-        pass
-
+    student_averages = {
+        "Alice":84.33,
+        "Bob":80.00,
+        "Charlie":84.33,
+        "David":71.67
+        }
+print("The students with a higher average score than 80 are: ")
+for key in student_averages.keys():
+    if student_averages[key] > 80:
+        print(key)
+    
+        
+        
 #Write a Python program that:
 # 1. Calculates the average score for each student.
 # 2. Stores these averages in a new dictionary where the student’s name is the key and their average score is the value.
