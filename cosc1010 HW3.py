@@ -3,7 +3,7 @@
 # Novemeber 5, 2024
 # HW 03
 # Lab Section: 11
-# Sources, people worked with, help given to:
+# Sources, people worked with, help given to: 
 # your
 # comments
 # here
@@ -19,13 +19,12 @@ def jan_first_day(year):
 def days_in_month(month, year):
     if month == 2:  
         return 29 if leap_year(year) else 28
-    elif month in [4, 6, 9, 11]:  # April, June, September, November
+    elif month in [4, 6, 9, 11]:  
         return 30
     else:
         return 31
 
 def validate_date(month, day, year):
-    # Check if the date is valid
     if month < 1 or month > 12:
         return False
     if day < 1 or day > days_in_month(month, year):
@@ -45,12 +44,9 @@ def main():
         print("Invalid date format. Please enter a date in the format MM/DD/YYYY.")
         return
 
-    # Validate date
     if not validate_date(month, day, year):
         print(f"The date {date_input} isn't a correct date.")
         return
-
-    # Calculate day of the week
     day_code = day_of_week(month, day, year)
     days_of_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     print(f"{date_input} {days_of_week[day_code]}")
